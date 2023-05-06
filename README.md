@@ -1,2 +1,2 @@
-# AhoCorasickAlgorithm_V2_0Console
- Learn AhoCorasick Algorithm
+# Aho-Corasick Algorithm
+ Learn Aho-Corasick Algorithm

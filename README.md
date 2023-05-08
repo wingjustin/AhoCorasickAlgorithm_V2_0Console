@@ -19,7 +19,8 @@
 <br>, 這時可以把fail指針指向的節點的子節點map中所有子節點納入自己的子節點map,但要優先保留自己孩子,忽略與自己孩子衝突的節點,只納入沒衝突的。child map -> transfer map
 <br>, 這樣字典樹就變成字典圖, 在配對過程中就算失配或者配對結束時都可以跟據主字串的下一個字符像自己子節點一樣直接跳到合適的分支的子節點或者根繼續配對,配對指針沒有任何停頓。
 <br>, fail指針只拿來獲取後綴。
-<br><br>需要留意的是這項優化在搆建transfer map的時候會要求fail指針指向的上層節點已搆建好fail指針和transfer map, 所以搆建時要用廣度優先搜索
+<br><br>需要留意的是這項優化在搆建transfer map的時候會要求fail指針指向的上層節點已搆建好其fail指針和transfer map, 然後再用該transfer map搆建自己的transfer map
+<br>, 所以搆建時要用廣度優先搜索
 
 
 <hr>
